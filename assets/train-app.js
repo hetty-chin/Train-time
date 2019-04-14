@@ -74,7 +74,7 @@ window.onload = function () {
     // Prettify the frequency https://www.w3resource.com/javascript-exercises/javascript-date-exercise-13.php
 
     var frequencyPretty = ""
-    if (frequency > 59) {
+    if (frequency >= 60) {
       frequencyPretty = timeConvert(frequency);
     } else {
       frequencyPretty = frequency + " minute(s)";
@@ -125,7 +125,7 @@ window.onload = function () {
 
     // this console logs the train name, destination, formatted frequency, minutes away, next train that we added to the tempdata
     console.log(tempTrainData);
-// -------- something happens here that isn't working 
+
     // create the new row
     var newRow = document.createElement("tr");
 
